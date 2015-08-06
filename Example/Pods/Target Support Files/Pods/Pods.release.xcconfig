@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/HFTableCollectionBindingHelper" "${PODS_ROOT}/Headers/Public/KVOMutableArray" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveCocoaStoryBoardDemo" "${PODS_ROOT}/Headers/Public/WZProtocolInterceptor"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/HFTableCollectionBindingHelper" -isystem "${PODS_ROOT}/Headers/Public/KVOMutableArray" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoaStoryBoardDemo" -isystem "${PODS_ROOT}/Headers/Public/WZProtocolInterceptor"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"HFTableCollectionBindingHelper" -l"KVOMutableArray" -l"ReactiveCocoa" -l"WZProtocolInterceptor"
+PODS_ROOT = ${SRCROOT}/Pods

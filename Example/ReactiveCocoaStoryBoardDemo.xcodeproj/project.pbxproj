@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19CE64EF33EA7CB0F9A7D436 /* Pods_ReactiveCocoaStoryBoardDemo_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8703A2CDC98155ADAC792DCF /* Pods_ReactiveCocoaStoryBoardDemo_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,8 +20,18 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6008937B8362E37A7F729BBA /* Pods_ReactiveCocoaStoryBoardDemo_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFE9BD3443683C3116A83C /* Pods_ReactiveCocoaStoryBoardDemo_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8B22848E8B3D7668C23D1168 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684514F37D956C24807FE797 /* libPods.a */; };
+		8BA4884917A7625AF3CAE816 /* libPods-ReactiveCocoaStoryBoardDemo_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E91FDB07105E621BCCFF5B63 /* libPods-ReactiveCocoaStoryBoardDemo_Example.a */; };
+		ABC08C2A48FB826971EF9411 /* libPods-ReactiveCocoaStoryBoardDemo_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CFAF3B4B2CF920E1311437 /* libPods-ReactiveCocoaStoryBoardDemo_Tests.a */; };
+		F9238F2A1B73886000A20364 /* HFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F291B73886000A20364 /* HFCollectionViewController.m */; };
+		F9238F301B73889B00A20364 /* HFCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F2F1B73889B00A20364 /* HFCollectionViewModel.m */; };
+		F9238F331B738A0300A20364 /* HFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F321B738A0300A20364 /* HFCollectionViewCell.m */; };
+		F9238F361B738A5200A20364 /* HFCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F351B738A5200A20364 /* HFCollectionViewCellModel.m */; };
+		F9238F511B738F2B00A20364 /* HFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F501B738F2B00A20364 /* HFTableViewController.m */; };
+		F9238F541B738F4700A20364 /* HFTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F531B738F4700A20364 /* HFTableViewModel.m */; };
+		F9238F571B738F6100A20364 /* HFTableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F561B738F6100A20364 /* HFTableTableViewCell.m */; };
+		F9238F5A1B738F6E00A20364 /* HFTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238F591B738F6E00A20364 /* HFTableViewCellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +46,13 @@
 
 /* Begin PBXFileReference section */
 		01DCE2A9497ABF693DB8846F /* Pods-ReactiveCocoaStoryBoardDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaStoryBoardDemo_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaStoryBoardDemo_Example/Pods-ReactiveCocoaStoryBoardDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0829CBD6A0C018D08765F967 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		1C9C9B1E6AE32BCC96B76F94 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1EFD5223CB1A492B446BB678 /* ReactiveCocoaStoryBoardDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReactiveCocoaStoryBoardDemo.podspec; path = ../ReactiveCocoaStoryBoardDemo.podspec; sourceTree = "<group>"; };
+		30437CE90077B4ED29330843 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3800228654AF895AE1ABDB1C /* Pods-ReactiveCocoaStoryBoardDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaStoryBoardDemo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaStoryBoardDemo_Tests/Pods-ReactiveCocoaStoryBoardDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		465D9C5987C487F33EA34EEB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5EEFE9BD3443683C3116A83C /* Pods_ReactiveCocoaStoryBoardDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoaStoryBoardDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ReactiveCocoaStoryBoardDemo.app; path = ReactiveCocoaStoryBoardDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaStoryBoardDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -55,16 +65,34 @@
 		6003F5A5195388D20070C39A /* HFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* HFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = ReactiveCocoaStoryBoardDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveCocoaStoryBoardDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		8703A2CDC98155ADAC792DCF /* Pods_ReactiveCocoaStoryBoardDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoaStoryBoardDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684514F37D956C24807FE797 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		87CD4884CF940078461880C4 /* Pods-ReactiveCocoaStoryBoardDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaStoryBoardDemo_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaStoryBoardDemo_Tests/Pods-ReactiveCocoaStoryBoardDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		892C76C71F5CFE4F732D453C /* Pods-ReactiveCocoaStoryBoardDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaStoryBoardDemo_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaStoryBoardDemo_Example/Pods-ReactiveCocoaStoryBoardDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
+		92CFAF3B4B2CF920E1311437 /* libPods-ReactiveCocoaStoryBoardDemo_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveCocoaStoryBoardDemo_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91FDB07105E621BCCFF5B63 /* libPods-ReactiveCocoaStoryBoardDemo_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveCocoaStoryBoardDemo_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9238F281B73886000A20364 /* HFCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCollectionViewController.h; sourceTree = "<group>"; };
+		F9238F291B73886000A20364 /* HFCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCollectionViewController.m; sourceTree = "<group>"; };
+		F9238F2E1B73889B00A20364 /* HFCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCollectionViewModel.h; sourceTree = "<group>"; };
+		F9238F2F1B73889B00A20364 /* HFCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCollectionViewModel.m; sourceTree = "<group>"; };
+		F9238F311B738A0300A20364 /* HFCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCollectionViewCell.h; sourceTree = "<group>"; };
+		F9238F321B738A0300A20364 /* HFCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCollectionViewCell.m; sourceTree = "<group>"; };
+		F9238F341B738A5200A20364 /* HFCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCollectionViewCellModel.h; sourceTree = "<group>"; };
+		F9238F351B738A5200A20364 /* HFCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCollectionViewCellModel.m; sourceTree = "<group>"; };
+		F9238F4F1B738F2B00A20364 /* HFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableViewController.h; sourceTree = "<group>"; };
+		F9238F501B738F2B00A20364 /* HFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableViewController.m; sourceTree = "<group>"; };
+		F9238F521B738F4700A20364 /* HFTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableViewModel.h; sourceTree = "<group>"; };
+		F9238F531B738F4700A20364 /* HFTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableViewModel.m; sourceTree = "<group>"; };
+		F9238F551B738F6100A20364 /* HFTableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableTableViewCell.h; sourceTree = "<group>"; };
+		F9238F561B738F6100A20364 /* HFTableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableTableViewCell.m; sourceTree = "<group>"; };
+		F9238F581B738F6E00A20364 /* HFTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableViewCellModel.h; sourceTree = "<group>"; };
+		F9238F591B738F6E00A20364 /* HFTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableViewCellModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +103,8 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				6008937B8362E37A7F729BBA /* Pods_ReactiveCocoaStoryBoardDemo_Example.framework in Frameworks */,
+				8B22848E8B3D7668C23D1168 /* libPods.a in Frameworks */,
+				8BA4884917A7625AF3CAE816 /* libPods-ReactiveCocoaStoryBoardDemo_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +115,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				19CE64EF33EA7CB0F9A7D436 /* Pods_ReactiveCocoaStoryBoardDemo_Tests.framework in Frameworks */,
+				ABC08C2A48FB826971EF9411 /* libPods-ReactiveCocoaStoryBoardDemo_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +129,8 @@
 				892C76C71F5CFE4F732D453C /* Pods-ReactiveCocoaStoryBoardDemo_Example.release.xcconfig */,
 				87CD4884CF940078461880C4 /* Pods-ReactiveCocoaStoryBoardDemo_Tests.debug.xcconfig */,
 				3800228654AF895AE1ABDB1C /* Pods-ReactiveCocoaStoryBoardDemo_Tests.release.xcconfig */,
+				30437CE90077B4ED29330843 /* Pods.debug.xcconfig */,
+				0829CBD6A0C018D08765F967 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -119,8 +150,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Example.app */,
+				6003F5AE195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,8 +163,9 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				5EEFE9BD3443683C3116A83C /* Pods_ReactiveCocoaStoryBoardDemo_Example.framework */,
-				8703A2CDC98155ADAC792DCF /* Pods_ReactiveCocoaStoryBoardDemo_Tests.framework */,
+				684514F37D956C24807FE797 /* libPods.a */,
+				E91FDB07105E621BCCFF5B63 /* libPods-ReactiveCocoaStoryBoardDemo_Example.a */,
+				92CFAF3B4B2CF920E1311437 /* libPods-ReactiveCocoaStoryBoardDemo_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +180,22 @@
 				6003F5A6195388D20070C39A /* HFViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				F9238F281B73886000A20364 /* HFCollectionViewController.h */,
+				F9238F291B73886000A20364 /* HFCollectionViewController.m */,
+				F9238F2E1B73889B00A20364 /* HFCollectionViewModel.h */,
+				F9238F2F1B73889B00A20364 /* HFCollectionViewModel.m */,
+				F9238F311B738A0300A20364 /* HFCollectionViewCell.h */,
+				F9238F321B738A0300A20364 /* HFCollectionViewCell.m */,
+				F9238F341B738A5200A20364 /* HFCollectionViewCellModel.h */,
+				F9238F351B738A5200A20364 /* HFCollectionViewCellModel.m */,
+				F9238F4F1B738F2B00A20364 /* HFTableViewController.h */,
+				F9238F501B738F2B00A20364 /* HFTableViewController.m */,
+				F9238F521B738F4700A20364 /* HFTableViewModel.h */,
+				F9238F531B738F4700A20364 /* HFTableViewModel.m */,
+				F9238F551B738F6100A20364 /* HFTableTableViewCell.h */,
+				F9238F561B738F6100A20364 /* HFTableTableViewCell.m */,
+				F9238F581B738F6E00A20364 /* HFTableViewCellModel.h */,
+				F9238F591B738F6E00A20364 /* HFTableViewCellModel.m */,
 			);
 			name = "Example for ReactiveCocoaStoryBoardDemo";
 			path = ReactiveCocoaStoryBoardDemo;
@@ -204,7 +252,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				1B62A4542998AC1EED7D37C7 /* Embed Pods Frameworks */,
 				254BB9ECEE7A86B355CF6CA8 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -213,7 +260,7 @@
 			);
 			name = ReactiveCocoaStoryBoardDemo_Example;
 			productName = ReactiveCocoaStoryBoardDemo;
-			productReference = 6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo.app */;
+			productReference = 6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Tests */ = {
@@ -224,7 +271,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				180E118ACD3831CF5913B531 /* Embed Pods Frameworks */,
 				83B6AD3F77550A7EF904E347 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -234,7 +280,7 @@
 			);
 			name = ReactiveCocoaStoryBoardDemo_Tests;
 			productName = ReactiveCocoaStoryBoardDemoTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -293,36 +339,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		180E118ACD3831CF5913B531 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoaStoryBoardDemo_Tests/Pods-ReactiveCocoaStoryBoardDemo_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B62A4542998AC1EED7D37C7 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoaStoryBoardDemo_Example/Pods-ReactiveCocoaStoryBoardDemo_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1D26639EB309B74E5DAA63F2 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,9 +406,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9238F2A1B73886000A20364 /* HFCollectionViewController.m in Sources */,
 				6003F59E195388D20070C39A /* HFAppDelegate.m in Sources */,
+				F9238F571B738F6100A20364 /* HFTableTableViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* HFViewController.m in Sources */,
+				F9238F5A1B738F6E00A20364 /* HFTableViewCellModel.m in Sources */,
+				F9238F301B73889B00A20364 /* HFCollectionViewModel.m in Sources */,
+				F9238F331B738A0300A20364 /* HFCollectionViewCell.m in Sources */,
+				F9238F361B738A5200A20364 /* HFCollectionViewCellModel.m in Sources */,
+				F9238F541B738F4700A20364 /* HFTableViewModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F9238F511B738F2B00A20364 /* HFTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +532,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01DCE2A9497ABF693DB8846F /* Pods-ReactiveCocoaStoryBoardDemo_Example.debug.xcconfig */;
+			baseConfigurationReference = 30437CE90077B4ED29330843 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -523,7 +547,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 892C76C71F5CFE4F732D453C /* Pods-ReactiveCocoaStoryBoardDemo_Example.release.xcconfig */;
+			baseConfigurationReference = 0829CBD6A0C018D08765F967 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

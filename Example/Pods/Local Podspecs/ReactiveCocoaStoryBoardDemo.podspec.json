@@ -1,0 +1,25 @@
+{
+  "name": "ReactiveCocoaStoryBoardDemo",
+  "version": "0.1.0",
+  "summary": "A short description of ReactiveCocoaStoryBoardDemo.",
+  "description": "An optional longer description of ReactiveCocoaStoryBoardDemo\n\n* Markdown format.\n* Don't worry about the indent, we strip it!",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ReactiveCocoaStoryBoardDemo",
+  "license": "MIT",
+  "authors": {
+    "Hai Feng Kao": "haifeng@cocoaspice.in"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ReactiveCocoaStoryBoardDemo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ReactiveCocoaStoryBoardDemo": [
+      "Pod/Assets/*.jpg"
+    ]
+  }
+}
