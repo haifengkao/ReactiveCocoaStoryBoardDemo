@@ -102,10 +102,11 @@ static NSString * const Text = @"Text";
             tableViewModel.data = [KVOMutableArray new];
             
             for (NSDictionary* detail in dict[Detail]) {
-                HFTableViewCellModel* tabelViewCellModel = [HFTableViewCellModel new];
-                tabelViewCellModel.imagePath = detail[ImageName];
-                tabelViewCellModel.text = detail[Text];
-                [tableViewModel.data addObject:tabelViewCellModel];
+                HFTableViewCellModel* tableViewCellModel = [HFTableViewCellModel new];
+                tableViewCellModel.imagePath = detail[ImageName];
+                tableViewCellModel.text = detail[Text];
+                KVOMutableArray* innerRow = [[KVOMutableArray alloc] initWithObjects:tableViewCellModel, nil];
+                [tableViewModel.data addObject:innerRow];
             }
             [cellModels addObject:cellModel];
         }

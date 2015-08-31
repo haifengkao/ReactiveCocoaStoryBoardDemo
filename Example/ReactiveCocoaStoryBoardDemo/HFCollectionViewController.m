@@ -15,6 +15,7 @@
 @interface HFCollectionViewController ()
 @property HFCollectionViewModel* viewModel;
 @property HFCollectionViewBindingHelper* bindingHelper;
+@property NSInteger cellId;
 @end
 
 @implementation HFCollectionViewController
@@ -33,10 +34,12 @@ static NSString * const reuseIdentifier = @"Cell";
     
     self.collectionView.pagingEnabled = YES;
     self.viewModel = [HFCollectionViewModel new];
+    typeof(self) __weak selfRef = self;
     self.bindingHelper = [HFCollectionViewBindingHelper bindingForCollectionView:self.collectionView sourceList:self.viewModel.data didSelectionBlock:^(id model) {
         
-        HFCollectionViewCellModel* celModel = model;
-        [self performSegueWithIdentifier:@"TableViewSegue" sender:celModel.tableViewModel];
+        selfRef.cellId = [self.viewModel.data indexOfObject:model];
+        HFCollectionViewCellModel* cellModel = model;
+        [selfRef performSegueWithIdentifier:@"TableViewSegue" sender:cellModel.tableViewModel];
     } cellReuseIdentifier:@"CELL" isNested:NO];
 }
 
@@ -45,22 +48,21 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSIndexPath* path = [NSIndexPath indexPathForItem:self.cellId inSection:0];
+    [self.collectionView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
+}
+
 - (void)viewWillLayoutSubviews;
 {
     [super viewWillLayoutSubviews];
     
+    CGSize size = [[UIScreen mainScreen] bounds].size;
     CGSize itemSize = CGSizeZero;
     
-    if (UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication.statusBarOrientation)) {
-        itemSize = CGSizeMake(568.0, 300.0);
-    } else {
-        itemSize = CGSizeMake(320.0, 548.0);
-    }
-    //    if (UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication.statusBarOrientation)) {
-    //        itemSize = CGSizeMake(1024.0, 748.0);
-    //    } else {
-    //        itemSize = CGSizeMake(768.0, 1004.0);
-    //    }
+    itemSize = size;
+    
     UICollectionViewFlowLayout *flowLayout = (id)self.collectionView.collectionViewLayout;
     
     if (!CGSizeEqualToSize(itemSize, flowLayout.itemSize)){

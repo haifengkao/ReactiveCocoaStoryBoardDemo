@@ -13,6 +13,8 @@
 @property IBOutlet UIBarButtonItem* backItem;
 @end
 
+#define FooterSize 6.0
+#define SeperatorInset 15.0
 @implementation HFTableViewController
 
 - (void)viewDidLoad {
@@ -27,10 +29,18 @@
     
     self.bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:self.viewModel.data didSelectionBlock:^(id model) {
         
-    } cellReuseIdentifier:@"CELL" isNested:NO];
+    } cellReuseIdentifier:@"CELL" isNested:YES];
     
+    self.tableView.sectionFooterHeight = FooterSize;
+    self.tableView.sectionHeaderHeight = 5.0;
+    self.tableView.allowsSelection = NO;
     self.backItem.action = @selector(back:);
     self.backItem.target = self;
+    
+    UIView* backgroundView = [[UIView alloc] initWithFrame:self.tableView.bounds];
+    
+    backgroundView.backgroundColor = [UIColor colorWithWhite:60.0/255.0 alpha:1.0];
+    [self.tableView setBackgroundView:backgroundView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,26 +56,17 @@
 - (void)viewWillLayoutSubviews;
 
 {
-    
     [super viewWillLayoutSubviews];
     
     
+    CGSize size = [[UIScreen mainScreen] bounds].size;
+    CGFloat width = size.width;
     
-    CGFloat rowHeight = 0.0;
+    // Golden ration 2:1 in width
     
+    CGFloat rowHeight = round(width*8.0/12.0/2.0);
     
-    
-    if (UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication.statusBarOrientation)) {
-        
-        rowHeight = 220.0;
-        
-    } else {
-        
-        rowHeight = 100.0;
-        
-    }
-    
-    
+//    if (UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication.statusBarOrientation)) {
     
     if (self.tableView.rowHeight != rowHeight) {
         
@@ -76,7 +77,37 @@
     }
     
 }
+
 #pragma mark - Table view data source
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *headerView = [[UIView alloc] init];
+    headerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.tableView.bounds), 5.0);
+    return headerView;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *footerView = [[UIView alloc] init];
+    
+    if (section != self.tableView.numberOfSections-1) {
+        UIView* line = [[UIView alloc] init];
+        
+        line.backgroundColor = [UIColor whiteColor];
+        
+        footerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.tableView.bounds), FooterSize);
+        
+        CGRect frame = CGRectZero;
+        frame.origin.x = SeperatorInset;
+        frame.origin.y = FooterSize - 1;
+        
+        frame.size = CGSizeMake(footerView.frame.size.width - 2*SeperatorInset, 1.0);
+        line.frame = frame;
+        
+        [footerView addSubview:line];
+    }
+    
+    return footerView;
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.

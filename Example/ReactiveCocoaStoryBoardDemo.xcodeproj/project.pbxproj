@@ -52,7 +52,7 @@
 		30437CE90077B4ED29330843 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3800228654AF895AE1ABDB1C /* Pods-ReactiveCocoaStoryBoardDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaStoryBoardDemo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaStoryBoardDemo_Tests/Pods-ReactiveCocoaStoryBoardDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		465D9C5987C487F33EA34EEB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaStoryBoardDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* 說故事.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "說故事.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -150,7 +150,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Example.app */,
+				6003F58A195388D20070C39A /* 說故事.app */,
 				6003F5AE195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Tests.xctest */,
 			);
 			name = Products;
@@ -260,7 +260,7 @@
 			);
 			name = ReactiveCocoaStoryBoardDemo_Example;
 			productName = ReactiveCocoaStoryBoardDemo;
-			productReference = 6003F58A195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* 說故事.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* ReactiveCocoaStoryBoardDemo_Tests */ = {
@@ -490,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -539,8 +539,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactiveCocoaStoryBoardDemo/ReactiveCocoaStoryBoardDemo-Prefix.pch";
 				INFOPLIST_FILE = "ReactiveCocoaStoryBoardDemo/ReactiveCocoaStoryBoardDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "說故事";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -554,8 +555,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactiveCocoaStoryBoardDemo/ReactiveCocoaStoryBoardDemo-Prefix.pch";
 				INFOPLIST_FILE = "ReactiveCocoaStoryBoardDemo/ReactiveCocoaStoryBoardDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "說故事";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
